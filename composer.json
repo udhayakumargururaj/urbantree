@@ -1,3 +1,10 @@
 {
-     "templateName": "TEST"
+    "post-install-cmd": [
+        "php artisan clear-compiled",
+        "chmod -R 777 vendor/",
+        "chmod -R 777 js/",
+        "chmod -R 777 img/",
+        "chmod -R 777 css/",
+        "chmod -R 777 sass/"
+    ]
 }
